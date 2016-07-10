@@ -18,7 +18,7 @@ const App = React.createClass({
     });
   },
   getInitialState() {
-    return { data: { yesterday: [], today: [], impediments: [] } };
+    return { data: { username: '', yesterday: [], today: [], impediments: [] } };
   },
   componentDidMount() {
     this.loadDataFromServer();

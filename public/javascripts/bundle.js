@@ -67,7 +67,7 @@
 	    });
 	  },
 	  getInitialState: function getInitialState() {
-	    return { data: { yesterday: [], today: [], impediments: [] } };
+	    return { data: { username: '', yesterday: [], today: [], impediments: [] } };
 	  },
 	  componentDidMount: function componentDidMount() {
 	    this.loadDataFromServer();
@@ -31221,11 +31221,31 @@
 
 	var Activity = React.createClass({
 	  displayName: 'Activity',
+	  onClick: function onClick(data) {
+	    console.log('data:', data);
+	  },
 	  render: function render() {
+	    var _this = this;
+
 	    return React.createElement(
-	      'li',
+	      'tr',
 	      null,
-	      this.props.data.description
+	      React.createElement(
+	        'td',
+	        null,
+	        this.props.data.description
+	      ),
+	      React.createElement(
+	        'td',
+	        null,
+	        React.createElement(
+	          'a',
+	          { href: '#', onClick: function onClick() {
+	              return _this.onClick(_this.props.data);
+	            } },
+	          React.createElement('span', { className: 'glyphicon glyphicon-trash', 'aria-hidden': 'true' })
+	        )
+	      )
 	    );
 	  }
 	});
@@ -31256,9 +31276,13 @@
 	        this.props.heading
 	      ),
 	      React.createElement(
-	        'ul',
-	        null,
-	        activities
+	        'table',
+	        { className: 'table table-striped' },
+	        React.createElement(
+	          'tbody',
+	          null,
+	          activities
+	        )
 	      )
 	    );
 	  }

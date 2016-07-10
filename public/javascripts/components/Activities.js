@@ -10,9 +10,11 @@ const Activities = React.createClass({
     return (
       <div>
         <h3>{this.props.heading}</h3>
-        <ul>
-          {activities}
-        </ul>
+        <table className="table table-striped">
+          <tbody>
+            {activities}
+          </tbody>
+        </table>
       </div>
     );
   }
