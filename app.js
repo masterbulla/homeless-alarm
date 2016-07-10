@@ -6,7 +6,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var Strategy = require('passport-twitter').Strategy;
+var mongoose = require('mongoose');
+var debug = require('debug')('homeless-alarm:server');
 require('dotenv').config();
+
+var uri = process.env.MONGODB_URI;
+mongoose.connect(uri);
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function (callback) {
+  debug('mongolab connection opened');
+});
 
 // see: https://github.com/passport/express-4.x-twitter-example
 passport.use(new Strategy(
