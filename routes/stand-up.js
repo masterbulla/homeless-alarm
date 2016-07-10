@@ -4,7 +4,8 @@ var router = express.Router();
 router.get('/',
   require('connect-ensure-login').ensureLoggedIn(),
   function (req, res, next) {
-    res.send({ message: 'TODO' });
+    var data = require('../data/stand-up.json');
+    res.send(data);
   });
 
 module.exports = router;
