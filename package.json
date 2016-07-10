@@ -1,6 +1,6 @@
 {
   "name": "homeless-alarm",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "private": true,
   "scripts": {
     "nodemon": "DEBUG=homeless-alarm:* nodemon ./bin/www",
