@@ -10,15 +10,19 @@ html
     link(rel="stylesheet", href="/stylesheets/bootstrap-social.css")
   body
     div.container
-      block content
-      ul
-        li
-          a(href="/") index
-        li
-          a(href="/login") login
-        li
-          a(href="/logout") logout
-        li
-          a(href="/profile") profile
+      div.row
+        div.col-xs-12
+          block content
+      div.row
+        div.col-xs-12
+          ul.list-inline
+            li
+              a.btn.btn-default(href="/") index
+            li
+              a.btn.btn-default(href="/login") login
+            li
+              a.btn.btn-default(href="/logout") logout
+            li
+              a.btn.btn-default(href="/profile") profile
       footer
         small= title
