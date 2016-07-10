@@ -30,5 +30,11 @@
       "description": "catch up w/ James re wiki"
     }
   ],
-  "impediments": []
+  "impediments": [
+    {
+      "id": "9ad6bc1b-80a4-43ac-b741-b18e31c66f8f",
+      "order": "0",
+      "description": "waiting for PR to be merged !?!"
+    }
+  ]
 }

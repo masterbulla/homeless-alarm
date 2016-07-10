@@ -7,9 +7,12 @@ router.get('/',
   require('connect-ensure-login').ensureLoggedIn(),
   function (req, res, next) {
     var StandUp = mongoose.model('StandUp', schemas.standUpSchema);
+
     StandUp.findOne({ username: req.user.username }, function (error, standUp) {
-      res.send(standUp);
+      var nullStandUp = { id: req.user.username, username: req.user.username, yesterday: [], today: [], impediments: [] }
+      res.send(standUp || nullStandUp);
     });
+
     /*
     var data = require('../data/stand-up.json');
     var standUp = new StandUp(data);

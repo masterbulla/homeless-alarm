@@ -31264,6 +31264,9 @@
 
 	var Activities = React.createClass({
 	  displayName: 'Activities',
+	  handleActivitySave: function handleActivitySave(activity) {
+	    console.log('activiy:', activity);
+	  },
 	  render: function render() {
 	    var activities = this.props.data.map(function (activity) {
 	      return React.createElement(Activity, { key: activity.id, data: activity });
@@ -31283,7 +31286,7 @@
 	          'tbody',
 	          null,
 	          activities,
-	          React.createElement(Form, { collectionType: this.props.collectionType })
+	          React.createElement(Form, { collectionType: this.props.collectionType, onActivitySave: this.handleActivitySave })
 	        )
 	      )
 	    );
@@ -31308,8 +31311,11 @@
 	  handleActivityChange: function handleActivityChange(event) {
 	    this.setState({ activity: event.target.value });
 	  },
-	  onSave: function onSave() {
-	    console.log('this.state:', JSON.stringify(this.state));
+	  handleClick: function handleClick(event) {
+	    // todo: add check ?!?
+	    event.preventDefault();
+	    this.props.onActivitySave(this.state); // info: I think I should submit the form here !?!
+	    this.setState({ activity: '' });
 	  },
 	  render: function render() {
 	    return React.createElement(
@@ -31330,7 +31336,7 @@
 	        null,
 	        React.createElement(
 	          'a',
-	          { onClick: this.onSave },
+	          { className: 'btn btn-default', onClick: this.handleClick },
 	          React.createElement('span', { className: 'glyphicon glyphicon-floppy-disk', 'aria-hidden': 'true' })
 	        )
 	      )

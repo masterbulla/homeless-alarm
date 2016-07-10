@@ -7,9 +7,13 @@ const Form = React.createClass({
   handleActivityChange(event) {
     this.setState({ activity: event.target.value });
   },
-  onSave() {
-    console.log('this.state:', JSON.stringify(this.state));
+  handleClick(event) {
+    // todo: add check ?!?
+    event.preventDefault();
+    this.props.onActivitySave(this.state); // info: I think I should submit the form here !?!
+    this.setState({ activity: '' });
   },
+
   render() {
     return (
       <tr>
@@ -22,11 +26,12 @@ const Form = React.createClass({
             onChange={this.handleActivityChange} />
         </td>
         <td>
-          <a onClick={this.onSave}>
+          <a className="btn btn-default" onClick={this.handleClick}>
             <span className="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
           </a>
         </td>
-      </tr>);
+      </tr>
+    );
   }
 });
 
