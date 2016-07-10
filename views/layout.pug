@@ -2,17 +2,20 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-social.css')
   body
-    block content
-    ul
-      li
-        a(href="/") index
-      li
-        a(href="/login") login
-      li
-        a(href="/logout") logout
-      li
-        a(href="/profile") profile
-    footer
-      small= title
+    div.container
+      block content
+      ul
+        li
+          a(href="/") index
+        li
+          a(href="/login") login
+        li
+          a(href="/logout") logout
+        li
+          a(href="/profile") profile
+      footer
+        small= title
