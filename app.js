@@ -51,7 +51,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', routes);
-app.use('/stand-up', standUp);
+app.use('/v1/stand-up', standUp);
 
 // todo: move into separate files
 app.get('/login',
