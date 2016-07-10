@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p
+    | id: #{user.id}
+    br
+    | username: #{user.username}
+    br
+    | name: #{user.displayName}
+    if user.emails
+      br
+      | email: #{user.emails[0].value}

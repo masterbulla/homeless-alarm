@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var package = require('../package');
+var model = require('./model');
 
 router.get('/', function (req, res, next) {
-  res.render('index', { title: package.name + ' v' + package.version });
+  res.render('index', model);
 });
 
 module.exports = router;
