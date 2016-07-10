@@ -1,0 +1,344 @@
+{
+  "id": "71804239",
+  "username": "mattiaerre",
+  "displayName": "Mattia Richetto",
+  "photos": [
+    {
+      "value": "https://pbs.twimg.com/profile_images/605108565716701184/jVsVkJr-_normal.jpg"
+    }
+  ],
+  "provider": "twitter",
+  "_raw": "{\"id\":71804239,\"id_str\":\"71804239\",\"name\":\"Mattia Richetto\",\"screen_name\":\"mattiaerre\",\"location\":\"London\",\"description\":\"Agile developer, marathon runner and sports fan relocated in London!\",\"url\":\"https:\\/\\/t.co\\/U4BHvsQtdT\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"https:\\/\\/t.co\\/U4BHvsQtdT\",\"expanded_url\":\"https:\\/\\/mattiarichetto.wordpress.com\\/\",\"display_url\":\"mattiarichetto.wordpress.com\",\"indices\":[0,23]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":332,\"friends_count\":364,\"listed_count\":60,\"created_at\":\"Sat Sep 05 13:47:08 +0000 2009\",\"favourites_count\":216,\"utc_offset\":3600,\"time_zone\":\"London\",\"geo_enabled\":true,\"verified\":false,\"statuses_count\":2521,\"lang\":\"en\",\"status\":{\"created_at\":\"Sun Jul 10 13:44:55 +0000 2016\",\"id\":752136523965947904,\"id_str\":\"752136523965947904\",\"text\":\"RT @ReactiveConf: Redux: Simplifying application state in #JavaScript https:\\/\\/t.co\\/CmnBsq0hbd https:\\/\\/t.co\\/Rh4hTLLVIy\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"JavaScript\",\"indices\":[58,69]}],\"symbols\":[],\"user_mentions\":[{\"screen_name\":\"ReactiveConf\",\"name\":\"Reactive Conference\",\"id\":3432576015,\"id_str\":\"3432576015\",\"indices\":[3,16]}],\"urls\":[{\"url\":\"https:\\/\\/t.co\\/CmnBsq0hbd\",\"expanded_url\":\"http:\\/\\/buff.ly\\/29qZUQK\",\"display_url\":\"buff.ly\\/29qZUQK\",\"indices\":[70,93]}],\"media\":[{\"id\":752104710165913600,\"id_str\":\"752104710165913600\",\"indices\":[94,117],\"media_url\":\"http:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"media_url_https\":\"https:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"url\":\"https:\\/\\/t.co\\/Rh4hTLLVIy\",\"display_url\":\"pic.twitter.com\\/Rh4hTLLVIy\",\"expanded_url\":\"http:\\/\\/twitter.com\\/ReactiveConf\\/status\\/752104711772397568\\/photo\\/1\",\"type\":\"photo\",\"sizes\":{\"large\":{\"w\":1280,\"h\":720,\"resize\":\"fit\"},\"medium\":{\"w\":1200,\"h\":675,\"resize\":\"fit\"},\"small\":{\"w\":680,\"h\":383,\"resize\":\"fit\"},\"thumb\":{\"w\":150,\"h\":150,\"resize\":\"crop\"}},\"source_status_id\":752104711772397568,\"source_status_id_str\":\"752104711772397568\",\"source_user_id\":3432576015,\"source_user_id_str\":\"3432576015\"}]},\"extended_entities\":{\"media\":[{\"id\":752104710165913600,\"id_str\":\"752104710165913600\",\"indices\":[94,117],\"media_url\":\"http:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"media_url_https\":\"https:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"url\":\"https:\\/\\/t.co\\/Rh4hTLLVIy\",\"display_url\":\"pic.twitter.com\\/Rh4hTLLVIy\",\"expanded_url\":\"http:\\/\\/twitter.com\\/ReactiveConf\\/status\\/752104711772397568\\/photo\\/1\",\"type\":\"photo\",\"sizes\":{\"large\":{\"w\":1280,\"h\":720,\"resize\":\"fit\"},\"medium\":{\"w\":1200,\"h\":675,\"resize\":\"fit\"},\"small\":{\"w\":680,\"h\":383,\"resize\":\"fit\"},\"thumb\":{\"w\":150,\"h\":150,\"resize\":\"crop\"}},\"source_status_id\":752104711772397568,\"source_status_id_str\":\"752104711772397568\",\"source_user_id\":3432576015,\"source_user_id_str\":\"3432576015\"}]},\"source\":\"\\u003ca href=\\\"http:\\/\\/twitter.com\\/download\\/iphone\\\" rel=\\\"nofollow\\\"\\u003eTwitter for iPhone\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Sun Jul 10 11:38:31 +0000 2016\",\"id\":752104711772397568,\"id_str\":\"752104711772397568\",\"text\":\"Redux: Simplifying application state in #JavaScript https:\\/\\/t.co\\/CmnBsq0hbd https:\\/\\/t.co\\/Rh4hTLLVIy\",\"truncated\":false,\"entities\":{\"hashtags\":[{\"text\":\"JavaScript\",\"indices\":[40,51]}],\"symbols\":[],\"user_mentions\":[],\"urls\":[{\"url\":\"https:\\/\\/t.co\\/CmnBsq0hbd\",\"expanded_url\":\"http:\\/\\/buff.ly\\/29qZUQK\",\"display_url\":\"buff.ly\\/29qZUQK\",\"indices\":[52,75]}],\"media\":[{\"id\":752104710165913600,\"id_str\":\"752104710165913600\",\"indices\":[76,99],\"media_url\":\"http:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"media_url_https\":\"https:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"url\":\"https:\\/\\/t.co\\/Rh4hTLLVIy\",\"display_url\":\"pic.twitter.com\\/Rh4hTLLVIy\",\"expanded_url\":\"http:\\/\\/twitter.com\\/ReactiveConf\\/status\\/752104711772397568\\/photo\\/1\",\"type\":\"photo\",\"sizes\":{\"large\":{\"w\":1280,\"h\":720,\"resize\":\"fit\"},\"medium\":{\"w\":1200,\"h\":675,\"resize\":\"fit\"},\"small\":{\"w\":680,\"h\":383,\"resize\":\"fit\"},\"thumb\":{\"w\":150,\"h\":150,\"resize\":\"crop\"}}}]},\"extended_entities\":{\"media\":[{\"id\":752104710165913600,\"id_str\":\"752104710165913600\",\"indices\":[76,99],\"media_url\":\"http:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"media_url_https\":\"https:\\/\\/pbs.twimg.com\\/media\\/CnADP8NWYAA24Bc.jpg\",\"url\":\"https:\\/\\/t.co\\/Rh4hTLLVIy\",\"display_url\":\"pic.twitter.com\\/Rh4hTLLVIy\",\"expanded_url\":\"http:\\/\\/twitter.com\\/ReactiveConf\\/status\\/752104711772397568\\/photo\\/1\",\"type\":\"photo\",\"sizes\":{\"large\":{\"w\":1280,\"h\":720,\"resize\":\"fit\"},\"medium\":{\"w\":1200,\"h\":675,\"resize\":\"fit\"},\"small\":{\"w\":680,\"h\":383,\"resize\":\"fit\"},\"thumb\":{\"w\":150,\"h\":150,\"resize\":\"crop\"}}}]},\"source\":\"\\u003ca href=\\\"http:\\/\\/bufferapp.com\\\" rel=\\\"nofollow\\\"\\u003eBuffer\\u003c\\/a\\u003e\",\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"retweet_count\":5,\"favorite_count\":5,\"favorited\":false,\"retweeted\":true,\"possibly_sensitive\":false,\"lang\":\"en\"},\"is_quote_status\":false,\"retweet_count\":5,\"favorite_count\":0,\"favorited\":false,\"retweeted\":true,\"possibly_sensitive\":false,\"lang\":\"en\"},\"contributors_enabled\":false,\"is_translator\":false,\"is_translation_enabled\":false,\"profile_background_color\":\"3C5439\",\"profile_background_image_url\":\"http:\\/\\/abs.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"profile_background_image_url_https\":\"https:\\/\\/abs.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/pbs.twimg.com\\/profile_images\\/605108565716701184\\/jVsVkJr-_normal.jpg\",\"profile_image_url_https\":\"https:\\/\\/pbs.twimg.com\\/profile_images\\/605108565716701184\\/jVsVkJr-_normal.jpg\",\"profile_banner_url\":\"https:\\/\\/pbs.twimg.com\\/profile_banners\\/71804239\\/1440353865\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"BDDCAD\",\"profile_sidebar_fill_color\":\"DDFFCC\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":false,\"has_extended_profile\":false,\"default_profile\":false,\"default_profile_image\":false,\"following\":false,\"follow_request_sent\":false,\"notifications\":false}",
+  "_json": {
+    "id": 71804239,
+    "id_str": "71804239",
+    "name": "Mattia Richetto",
+    "screen_name": "mattiaerre",
+    "location": "London",
+    "description": "Agile developer, marathon runner and sports fan relocated in London!",
+    "url": "https://t.co/U4BHvsQtdT",
+    "entities": {
+      "url": {
+        "urls": [
+          {
+            "url": "https://t.co/U4BHvsQtdT",
+            "expanded_url": "https://mattiarichetto.wordpress.com/",
+            "display_url": "mattiarichetto.wordpress.com",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      },
+      "description": {
+        "urls": []
+      }
+    },
+    "protected": false,
+    "followers_count": 332,
+    "friends_count": 364,
+    "listed_count": 60,
+    "created_at": "Sat Sep 05 13:47:08 +0000 2009",
+    "favourites_count": 216,
+    "utc_offset": 3600,
+    "time_zone": "London",
+    "geo_enabled": true,
+    "verified": false,
+    "statuses_count": 2521,
+    "lang": "en",
+    "status": {
+      "created_at": "Sun Jul 10 13:44:55 +0000 2016",
+      "id": 752136523965947900,
+      "id_str": "752136523965947904",
+      "text": "RT @ReactiveConf: Redux: Simplifying application state in #JavaScript https://t.co/CmnBsq0hbd https://t.co/Rh4hTLLVIy",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "JavaScript",
+            "indices": [
+              58,
+              69
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "ReactiveConf",
+            "name": "Reactive Conference",
+            "id": 3432576015,
+            "id_str": "3432576015",
+            "indices": [
+              3,
+              16
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/CmnBsq0hbd",
+            "expanded_url": "http://buff.ly/29qZUQK",
+            "display_url": "buff.ly/29qZUQK",
+            "indices": [
+              70,
+              93
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 752104710165913600,
+            "id_str": "752104710165913600",
+            "indices": [
+              94,
+              117
+            ],
+            "media_url": "http://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+            "url": "https://t.co/Rh4hTLLVIy",
+            "display_url": "pic.twitter.com/Rh4hTLLVIy",
+            "expanded_url": "http://twitter.com/ReactiveConf/status/752104711772397568/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 1280,
+                "h": 720,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 675,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              }
+            },
+            "source_status_id": 752104711772397600,
+            "source_status_id_str": "752104711772397568",
+            "source_user_id": 3432576015,
+            "source_user_id_str": "3432576015"
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 752104710165913600,
+            "id_str": "752104710165913600",
+            "indices": [
+              94,
+              117
+            ],
+            "media_url": "http://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+            "url": "https://t.co/Rh4hTLLVIy",
+            "display_url": "pic.twitter.com/Rh4hTLLVIy",
+            "expanded_url": "http://twitter.com/ReactiveConf/status/752104711772397568/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 1280,
+                "h": 720,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 675,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              }
+            },
+            "source_status_id": 752104711772397600,
+            "source_status_id_str": "752104711772397568",
+            "source_user_id": 3432576015,
+            "source_user_id_str": "3432576015"
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Sun Jul 10 11:38:31 +0000 2016",
+        "id": 752104711772397600,
+        "id_str": "752104711772397568",
+        "text": "Redux: Simplifying application state in #JavaScript https://t.co/CmnBsq0hbd https://t.co/Rh4hTLLVIy",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "JavaScript",
+              "indices": [
+                40,
+                51
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/CmnBsq0hbd",
+              "expanded_url": "http://buff.ly/29qZUQK",
+              "display_url": "buff.ly/29qZUQK",
+              "indices": [
+                52,
+                75
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 752104710165913600,
+              "id_str": "752104710165913600",
+              "indices": [
+                76,
+                99
+              ],
+              "media_url": "http://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+              "url": "https://t.co/Rh4hTLLVIy",
+              "display_url": "pic.twitter.com/Rh4hTLLVIy",
+              "expanded_url": "http://twitter.com/ReactiveConf/status/752104711772397568/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 1280,
+                  "h": 720,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1200,
+                  "h": 675,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 383,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 752104710165913600,
+              "id_str": "752104710165913600",
+              "indices": [
+                76,
+                99
+              ],
+              "media_url": "http://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CnADP8NWYAA24Bc.jpg",
+              "url": "https://t.co/Rh4hTLLVIy",
+              "display_url": "pic.twitter.com/Rh4hTLLVIy",
+              "expanded_url": "http://twitter.com/ReactiveConf/status/752104711772397568/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 1280,
+                  "h": 720,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1200,
+                  "h": 675,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 383,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                }
+              }
+            }
+          ]
+        },
+        "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 5,
+        "favorited": false,
+        "retweeted": true,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": true,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "3C5439",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/605108565716701184/jVsVkJr-_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/605108565716701184/jVsVkJr-_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/71804239/1440353865",
+    "profile_link_color": "0084B4",
+    "profile_sidebar_border_color": "BDDCAD",
+    "profile_sidebar_fill_color": "DDFFCC",
+    "profile_text_color": "333333",
+    "profile_use_background_image": false,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false
+  },
+  "_accessLevel": "read-write"
+}
