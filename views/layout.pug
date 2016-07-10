@@ -16,13 +16,12 @@ html
       div.row
         div.col-xs-12
           ul.list-inline
-            li
-              a.btn.btn-default(href="/") index
-            li
-              a.btn.btn-default(href="/login") login
-            li
-              a.btn.btn-default(href="/logout") logout
-            li
-              a.btn.btn-default(href="/profile") profile
+            if isAuthenticated
+              li
+                a.btn.btn-default(href="/") index
+              li
+                a.btn.btn-default(href="/profile") profile
+              li
+                a.btn.btn-warning(href="/logout") logout
       footer
         small= title

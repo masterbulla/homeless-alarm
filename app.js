@@ -52,10 +52,9 @@ app.use(passport.session());
 app.use('/', routes);
 
 // todo: move into separate files
-var model = require('./routes/model');
-
 app.get('/login',
   function (req, res) {
+    var model = require('./routes/model')(req.user);
     res.render('login', model);
   });
 
@@ -76,6 +75,7 @@ app.get('/auth/twitter/callback',
 app.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
+    var model = require('./routes/model')(req.user);
     model.user = req.user;
     res.render('profile', model);
   });
