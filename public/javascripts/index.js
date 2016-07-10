@@ -27,9 +27,9 @@ const App = React.createClass({
     return (
       <div>
         <h2>Stan-up v2.0 <small>{this.state.data.username}</small></h2>
-        <Activities heading="Yesterday" data={this.state.data.yesterday} />
-        <Activities heading="Today" data={this.state.data.today} />
-        <Activities heading="Impediments" data={this.state.data.impediments} />
+        <Activities heading="Yesterday" data={this.state.data.yesterday} collectionType="yesterday" />
+        <Activities heading="Today" data={this.state.data.today} collectionType="today" />
+        <Activities heading="Impediments" data={this.state.data.impediments} collectionType="impediments" />
       </div>
     );
   }

@@ -86,9 +86,9 @@
 	          this.state.data.username
 	        )
 	      ),
-	      React.createElement(Activities, { heading: 'Yesterday', data: this.state.data.yesterday }),
-	      React.createElement(Activities, { heading: 'Today', data: this.state.data.today }),
-	      React.createElement(Activities, { heading: 'Impediments', data: this.state.data.impediments })
+	      React.createElement(Activities, { heading: 'Yesterday', data: this.state.data.yesterday, collectionType: 'yesterday' }),
+	      React.createElement(Activities, { heading: 'Today', data: this.state.data.today, collectionType: 'today' }),
+	      React.createElement(Activities, { heading: 'Impediments', data: this.state.data.impediments, collectionType: 'impediments' })
 	    );
 	  }
 	});
@@ -31260,6 +31260,7 @@
 
 	var React = __webpack_require__(1);
 	var Activity = __webpack_require__(177);
+	var Form = __webpack_require__(179);
 
 	var Activities = React.createClass({
 	  displayName: 'Activities',
@@ -31277,11 +31278,12 @@
 	      ),
 	      React.createElement(
 	        'table',
-	        { className: 'table table-striped' },
+	        { className: 'table table-striped table-condensed' },
 	        React.createElement(
 	          'tbody',
 	          null,
-	          activities
+	          activities,
+	          React.createElement(Form, { collectionType: this.props.collectionType })
 	        )
 	      )
 	    );
@@ -31289,6 +31291,54 @@
 	});
 
 	module.exports = Activities;
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Form = React.createClass({
+	  displayName: 'Form',
+	  getInitialState: function getInitialState() {
+	    return { activity: '', collectionType: this.props.collectionType };
+	  },
+	  handleActivityChange: function handleActivityChange(event) {
+	    this.setState({ activity: event.target.value });
+	  },
+	  onSave: function onSave() {
+	    console.log('this.state:', JSON.stringify(this.state));
+	  },
+	  render: function render() {
+	    return React.createElement(
+	      'tr',
+	      null,
+	      React.createElement(
+	        'td',
+	        null,
+	        React.createElement('input', {
+	          className: 'form-control',
+	          type: 'text',
+	          placeholder: 'add activity',
+	          value: this.state.activity,
+	          onChange: this.handleActivityChange })
+	      ),
+	      React.createElement(
+	        'td',
+	        null,
+	        React.createElement(
+	          'a',
+	          { onClick: this.onSave },
+	          React.createElement('span', { className: 'glyphicon glyphicon-floppy-disk', 'aria-hidden': 'true' })
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Form;
 
 /***/ }
 /******/ ]);
