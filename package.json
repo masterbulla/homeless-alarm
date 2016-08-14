@@ -5,7 +5,7 @@
   "scripts": {
     "nodemon": "DEBUG=homeless-alarm:* nodemon ./bin/www",
     "start": "node ./bin/www",
-    "webpack": "webpack --watch"
+    "webpack": "webpack"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
