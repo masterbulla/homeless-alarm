@@ -6,6 +6,7 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title= title
     link(rel="stylesheet", href="/getbase/dist/css/styles.css")
+    link(rel="stylesheet", href="/css/fontello.css")
     link(rel="stylesheet", href="/stylesheets/style.css")
     script(src="/jquery/dist/jquery.min.js")
   body
@@ -18,11 +19,14 @@ html
           ul.list-inline
             if isAuthenticated
               li
-                a(href="/") home
+                a(href="/")
+                  i.icon-home-1
               li
-                a(href="/profile") profile
+                a(href="/profile")
+                  i.icon-user-1
               li
-                a(href="/logout") logout
+                a(href="/logout")
+                  i.icon-logout
       footer.text-center
         small= title
       script(src="/feature-toggle/dist/feature-toggle-client.js")
