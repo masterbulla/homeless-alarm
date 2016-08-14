@@ -40,7 +40,6 @@ passport.deserializeUser(function (obj, callback) {
 });
 
 var routes = require('./routes/index');
-var standUp = require('./routes/stand-up');
 
 var app = express();
 
@@ -62,7 +61,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', routes);
-app.use('/v1/stand-up', standUp);
 
 // todo: move into separate files
 app.get('/login',
