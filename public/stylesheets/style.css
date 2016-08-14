@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.twitter-button {
+  display: none;
+}
+
+.ft-twitter-button .twitter-button {
+  display: block;
+}
