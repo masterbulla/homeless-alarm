@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  context: path.join(__dirname, 'public/javascripts'),
+  context: path.join(__dirname, 'src/client'),
   entry: './index.js',
   output: {
     path: path.join(__dirname, 'public/javascripts'),

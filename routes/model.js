@@ -5,7 +5,6 @@ function model(user) {
     isAuthenticated: user !== undefined,
     title: package.name + ' v' + package.version
   };
-  console.log('model', JSON.stringify(model));
   return model;
 }
 
