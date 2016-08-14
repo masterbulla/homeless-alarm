@@ -1,4 +1,4 @@
-var package = require('../package');
+var package = require('../../package');
 
 function model(user) {
   var model = {
