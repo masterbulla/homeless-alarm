@@ -3,6 +3,7 @@
   "version": "0.2.2",
   "private": true,
   "scripts": {
+    "eslint": "eslint src/client --global document --ext .js,.jsx",
     "nodemon": "DEBUG=homeless-alarm:* nodemon ./src/bin/www",
     "start": "node ./src/bin/www",
     "webpack": "webpack"
@@ -16,6 +17,7 @@
     "express": "^4.14.0",
     "express-session": "^1.14.0",
     "feature-toggle": "^0.2.0",
+    "feature-toggles": "^1.4.0",
     "getbase": "^3.1.5",
     "jquery": "^3.1.0",
     "mongoose": "^4.5.8",
@@ -32,6 +34,11 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
+    "eslint": "^3.3.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.0",
     "nodemon": "^1.10.0",
     "webpack": "^1.13.1"
   }
