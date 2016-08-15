@@ -4,5 +4,11 @@
         "react",
         "jsx-a11y",
         "import"
-    ]
+    ],
+    "rules": {
+        "semi": [
+            "error",
+            "never"
+        ]
+    }
 }

@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   context: path.join(__dirname, 'src/client'),
-  entry: './index.js',
+  entry: './index.jsx',
   output: {
     path: path.join(__dirname, 'src/public/javascripts'),
     filename: 'bundle.js'
@@ -10,7 +10,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
