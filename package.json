@@ -39,6 +39,7 @@
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.0",
+    "json-loader": "^0.5.4",
     "nodemon": "^1.10.0",
     "webpack": "^1.13.1"
   }

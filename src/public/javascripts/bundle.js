@@ -56,9 +56,13 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
+	var _toggles = __webpack_require__(176);
+
+	var _toggles2 = _interopRequireDefault(_toggles);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(_App2.default, { toggles: _toggles2.default }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -21470,7 +21474,7 @@
 /* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -21482,15 +21486,55 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var App = function App() {
+	var App = function App(_ref) {
+	  var toggles = _ref.toggles;
 	  return _react2.default.createElement(
-	    'div',
+	    "div",
 	    null,
-	    '(╯°□°）╯︵ ┻━┻'
+	    _react2.default.createElement(
+	      "div",
+	      { className: "row clear pad-top-5 pad-bottom-5" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "col-12 text-center" },
+	        _react2.default.createElement(
+	          "span",
+	          null,
+	          "(╯°□°）╯︵ ┻━┻"
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "row clear pad-top-5 pad-bottom-5" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "col-12" },
+	        _react2.default.createElement("textarea", {
+	          className: "field",
+	          cols: "30",
+	          rows: "10",
+	          defaultValue: JSON.stringify(toggles, null, 2)
+	        })
+	      )
+	    )
 	  );
 	};
 
+	App.propTypes = {
+	  toggles: _react2.default.PropTypes.object
+	};
+
 	exports.default = App;
+
+/***/ },
+/* 176 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"authentication": false,
+		"table-flipping": true
+	};
 
 /***/ }
 /******/ ]);
