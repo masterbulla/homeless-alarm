@@ -56,13 +56,13 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _toggles = __webpack_require__(176);
+	var _togglesDev = __webpack_require__(176);
 
-	var _toggles2 = _interopRequireDefault(_toggles);
+	var _togglesDev2 = _interopRequireDefault(_togglesDev);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(_App2.default, { toggles: _toggles2.default }), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(_App2.default, { toggles: _togglesDev2.default }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
