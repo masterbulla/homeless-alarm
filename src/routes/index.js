@@ -1,20 +1,18 @@
-var express = require('express');
-var router = express.Router();
-var featureToggles = require('../infrastructure/feature-toggles');
+const express = require('express')
+const featureToggles = require('../infrastructure/feature-toggles')
+const makeModel = require('./make-model')
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
+
+const router = express.Router()
+
+function render(req, res) {
+  res.render('index', makeModel(req.user))
+}
 
 if (featureToggles.isFeatureEnabled('authentication')) {
-  router.get('/',
-    require('connect-ensure-login').ensureLoggedIn(),
-    render);
-}
-else {
-  router.get('/',
-    render);
+  router.get('/', ensureLoggedIn, render)
+} else {
+  router.get('/', render)
 }
 
-function render(req, res, next) {
-  var model = require('./model')(req.user);
-  res.render('index', model);
-}
-
-module.exports = router;
+module.exports = router
