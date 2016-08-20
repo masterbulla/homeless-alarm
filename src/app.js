@@ -43,8 +43,6 @@ app.set('view engine', 'pug')
 
 // uncomment after placing your favicon in /public
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
-app.use(require('express-status-monitor')())
-
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -82,6 +80,10 @@ app.get('/auth/twitter/callback',
     res.redirect('/')
   })
 // /todo: move into separate files
+
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
+
+app.get('/status', ensureLoggedIn, require('express-status-monitor')())
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
