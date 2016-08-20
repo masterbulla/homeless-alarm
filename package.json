@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "eslint:client": "eslint src/client --global document --ext .js,.jsx",
-    "eslint:server": "eslint src --ignore-path src/client --global document --ext .js,.jsx",
     "nodemon": "DEBUG=homeless-alarm:* nodemon ./src/bin/www",
     "start": "node ./src/bin/www",
     "webpack": "webpack"

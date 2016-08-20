@@ -1,3 +1,5 @@
-(function (setFeatures) {
-  var feature = setFeatures(['twitter-button']);
-})(setFeatures);
+/* global setFeatures */
+
+((setFeatures) => {
+  setFeatures(['twitter-button'])
+})(setFeatures)
