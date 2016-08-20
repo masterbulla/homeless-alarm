@@ -67,7 +67,7 @@ const logout = require('./routes/logout')
 
 app.use('/', routes)
 app.use('/profile', profile)
-app.use('/feature-toggles', featureToggles)
+app.use('/v1/feature-toggles', featureToggles)
 app.use('/login', login)
 app.use('/logout', logout)
 
@@ -98,7 +98,7 @@ app.use((req, res, next) => {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.locals.pretty = true
-  app.use((err, req, res) => {
+  app.use((err, req, res, next) => {
     res.status(err.status || 500)
     res.render('error', {
       message: err.message,
@@ -109,7 +109,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
   res.status(err.status || 500)
   res.render('error', {
     message: err.message,

@@ -1,5 +1,5 @@
 const express = require('express')
-const featureToggles = require('../infrastructure/feature-toggles')
+const featureToggles = require('../infrastructure/feature-toggles').featureToggles
 const makeModel = require('./make-model')
 const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
 

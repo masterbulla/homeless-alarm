@@ -1,10 +1,11 @@
 /* global document */
 
+import 'whatwg-fetch'
 import React from 'react'
 import { render } from 'react-dom'
-import App from './App'
+import FeatureTogglesPage from './FeatureTogglesPage'
 
 render(
-  <App toggles={{ message: 'TODO' }} />,
+  <FeatureTogglesPage />,
   document.getElementById('app')
 )
