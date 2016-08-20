@@ -21470,7 +21470,7 @@
 	      return _react2.default.createElement(
 	        'pre',
 	        null,
-	        JSON.stringify(this.state.toggles)
+	        JSON.stringify(this.state.toggles, null, 2)
 	      );
 	    }
 	  }]);

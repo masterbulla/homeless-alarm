@@ -21,7 +21,7 @@ class FeatureTogglesPage extends React.Component {
   render() {
     return (
       <pre>
-        {JSON.stringify(this.state.toggles) }
+        {JSON.stringify(this.state.toggles, null, 2) }
       </pre>
     )
   }
