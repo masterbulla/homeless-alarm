@@ -1,5 +1,5 @@
 /* global setFeatures */
 
 (function main(setFeatures) {
-  setFeatures(['twitter-button'])
+  setFeatures(['twitter-button', 'table-flipping'])
 }(setFeatures))

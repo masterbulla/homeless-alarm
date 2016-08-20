@@ -1,7 +1,7 @@
-.twitter-button {
+.twitter-button, .table-flipping {
   display: none;
 }
 
-.ft-twitter-button .twitter-button {
+.ft-twitter-button .twitter-button, .ft-table-flipping .table-flipping {
   display: block;
 }

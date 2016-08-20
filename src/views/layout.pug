@@ -11,8 +11,14 @@ html
     script(src="/jquery/dist/jquery.min.js")
   body
     div.container
-      block content
-      div.row
+      if toggles['table-flipping']
+        div.row.clear.pad-top-5.pad-bottom-5.table-flipping
+          div.col-12
+            p.text-center (╯°□°）╯︵ ┻━┻
+      div.row.clear.pad-top-5.pad-bottom-5
+        div.col-12
+          block content
+      div.row.clear.pad-top-5.pad-bottom-5
         div.col-12
           ul.list-inline
             if isAuthenticated
@@ -25,7 +31,9 @@ html
               li
                 a(href="/logout")
                   i.icon-logout
-      footer.text-center
-        small= title
+      div.row.clear.pad-top-5.pad-bottom-5
+        div.col-12
+          footer.text-center
+            small= title
       script(src="/feature-toggle/dist/feature-toggle-client.js")
       script(src="/javascripts/feature.js")
