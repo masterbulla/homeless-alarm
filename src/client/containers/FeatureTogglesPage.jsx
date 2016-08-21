@@ -1,6 +1,7 @@
 /* global fetch */
 
 import React from 'react'
+import FeatureTogglesForm from '../components/FeatureTogglesForm'
 
 class FeatureTogglesPage extends React.Component {
   constructor(props, context) {
@@ -11,24 +12,20 @@ class FeatureTogglesPage extends React.Component {
 
   componentDidMount() {
     fetch('/v1/feature-toggles')
-      .then((response) => (response.json())).then((json) => {
+      .then((response) => (response.json()))
+      .then((json) => {
         this.setState({ toggles: json })
-      }).catch((exception) => {
+      })
+      .catch((exception) => {
         throw new Error(`exception ${exception}`)
       })
   }
 
   render() {
     return (
-      <pre>
-        {JSON.stringify(this.state.toggles, null, 2) }
-      </pre>
+      <FeatureTogglesForm toggles={this.state.toggles} />
     )
   }
-}
-
-FeatureTogglesPage.propTypes = {
-  toggles: React.PropTypes.object,
 }
 
 export default FeatureTogglesPage
