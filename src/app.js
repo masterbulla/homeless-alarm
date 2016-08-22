@@ -81,10 +81,6 @@ app.get('/auth/twitter/callback',
   })
 // /todo: move into separate files
 
-const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
-
-app.get('/status', ensureLoggedIn, require('express-status-monitor')())
-
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   const err = new Error('Not Found')
