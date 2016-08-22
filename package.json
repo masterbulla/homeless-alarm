@@ -17,7 +17,6 @@
     "express": "^4.14.0",
     "express-session": "^1.14.0",
     "express-status-monitor": "0.0.10",
-    "feature-toggle": "^0.2.0",
     "feature-toggles": "^1.4.0",
     "getbase": "^3.1.5",
     "mongoose": "^4.5.8",
