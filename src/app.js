@@ -81,6 +81,8 @@ app.get('/auth/twitter/callback',
   })
 // /todo: move into separate files
 
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
+app.get('/status', ensureLoggedIn, require('express-status-monitor')())
 app.use(require('express-favicon-short-circuit'))
 
 // catch 404 and forward to error handler

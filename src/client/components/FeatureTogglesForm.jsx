@@ -2,10 +2,10 @@ import React from 'react'
 import _ from 'lodash'
 import Row from './Row'
 
-const FeatureTogglesForm = ({ toggles }) => {
+const FeatureTogglesForm = ({ toggles, handleAction }) => {
   const rows = []
   _.forOwn(toggles, (value, key) => {
-    rows.push(<Row key={key} name={key} value={value} />)
+    rows.push(<Row key={key} name={key} value={value} handleAction={handleAction} />)
   })
 
   return (
@@ -16,7 +16,7 @@ const FeatureTogglesForm = ({ toggles }) => {
       <table>
         <tbody>
           {rows}
-          <Row key="new" name="" />
+          <Row key="new" name="" handleAction={handleAction} />
         </tbody>
       </table>
     </div>
@@ -25,6 +25,7 @@ const FeatureTogglesForm = ({ toggles }) => {
 
 FeatureTogglesForm.propTypes = {
   toggles: React.PropTypes.object,
+  handleAction: React.PropTypes.func,
 }
 
 export default FeatureTogglesForm

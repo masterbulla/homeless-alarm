@@ -1,21 +1,27 @@
 import React from 'react'
 
-const Row = ({ name, value }) => {
+const Row = ({ name, value, handleAction }) => {
   let selected = value || value === undefined
   let featureName = name
-
-  const handleOnClick = () => {
-    console.log('featureName:', featureName, 'selected:', selected, 'action:', name === featureName ? 'del' : 'add')
-  }
 
   const handleNameOnChange = (event) => {
     featureName = event.target.value
   }
 
+  const makeAction = (type) => ({
+    type,
+    payload: { featureName, selected },
+  })
+
+  const handleOnClick = () => {
+    if (!featureName) return
+    handleAction(makeAction(name === featureName ? 'del' : 'add'))
+  }
+
   const handleValueOnChange = () => {
     selected = !selected
     if (name) {
-      console.log('featureName:', featureName, 'selected:', selected, 'action:', 'upd')
+      handleAction(makeAction('upd'))
     }
   }
 
@@ -49,6 +55,7 @@ const Row = ({ name, value }) => {
 Row.propTypes = {
   name: React.PropTypes.string,
   value: React.PropTypes.bool,
+  handleAction: React.PropTypes.func,
 }
 
 export default Row

@@ -21888,9 +21888,23 @@
 	  function FeatureTogglesPage(props, context) {
 	    _classCallCheck(this, FeatureTogglesPage);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FeatureTogglesPage).call(this, props, context));
+	    var _this = _possibleConstructorReturn(this, (FeatureTogglesPage.__proto__ || Object.getPrototypeOf(FeatureTogglesPage)).call(this, props, context));
 
 	    _this.state = { toggles: {} };
+	    _this.handleAction = function (action) {
+	      if (action.type === 'add' || action.type === 'upd') {
+	        _this.state.toggles[action.payload.featureName] = action.payload.selected;
+	        _this.setState({
+	          toggles: _this.state.toggles
+	        });
+	      }
+	      if (action.type === 'del') {
+	        delete _this.state.toggles[action.payload.featureName];
+	        _this.setState({
+	          toggles: _this.state.toggles
+	        });
+	      }
+	    };
 	    return _this;
 	  }
 
@@ -21910,7 +21924,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(_FeatureTogglesForm2.default, { toggles: this.state.toggles });
+	      return _react2.default.createElement(_FeatureTogglesForm2.default, { toggles: this.state.toggles, handleAction: this.handleAction });
 	    }
 	  }]);
 
@@ -21945,10 +21959,11 @@
 
 	var FeatureTogglesForm = function FeatureTogglesForm(_ref) {
 	  var toggles = _ref.toggles;
+	  var handleAction = _ref.handleAction;
 
 	  var rows = [];
 	  _lodash2.default.forOwn(toggles, function (value, key) {
-	    rows.push(_react2.default.createElement(_Row2.default, { key: key, name: key, value: value }));
+	    rows.push(_react2.default.createElement(_Row2.default, { key: key, name: key, value: value, handleAction: handleAction }));
 	  });
 
 	  return _react2.default.createElement(
@@ -21966,14 +21981,15 @@
 	        'tbody',
 	        null,
 	        rows,
-	        _react2.default.createElement(_Row2.default, { key: 'new', name: '' })
+	        _react2.default.createElement(_Row2.default, { key: 'new', name: '', handleAction: handleAction })
 	      )
 	    )
 	  );
 	};
 
 	FeatureTogglesForm.propTypes = {
-	  toggles: _react2.default.PropTypes.object
+	  toggles: _react2.default.PropTypes.object,
+	  handleAction: _react2.default.PropTypes.func
 	};
 
 	exports.default = FeatureTogglesForm;
@@ -38753,22 +38769,31 @@
 	var Row = function Row(_ref) {
 	  var name = _ref.name;
 	  var value = _ref.value;
+	  var handleAction = _ref.handleAction;
 
 	  var selected = value || value === undefined;
 	  var featureName = name;
-
-	  var handleOnClick = function handleOnClick() {
-	    console.log('featureName:', featureName, 'selected:', selected, 'action:', name === featureName ? 'del' : 'add');
-	  };
 
 	  var handleNameOnChange = function handleNameOnChange(event) {
 	    featureName = event.target.value;
 	  };
 
+	  var makeAction = function makeAction(type) {
+	    return {
+	      type: type,
+	      payload: { featureName: featureName, selected: selected }
+	    };
+	  };
+
+	  var handleOnClick = function handleOnClick() {
+	    if (!featureName) return;
+	    handleAction(makeAction(name === featureName ? 'del' : 'add'));
+	  };
+
 	  var handleValueOnChange = function handleValueOnChange() {
 	    selected = !selected;
 	    if (name) {
-	      console.log('featureName:', featureName, 'selected:', selected, 'action:', 'upd');
+	      handleAction(makeAction('upd'));
 	    }
 	  };
 
@@ -38814,7 +38839,8 @@
 
 	Row.propTypes = {
 	  name: _react2.default.PropTypes.string,
-	  value: _react2.default.PropTypes.bool
+	  value: _react2.default.PropTypes.bool,
+	  handleAction: _react2.default.PropTypes.func
 	};
 
 	exports.default = Row;

@@ -8,6 +8,20 @@ class FeatureTogglesPage extends React.Component {
     super(props, context)
 
     this.state = { toggles: {} }
+    this.handleAction = (action) => {
+      if (action.type === 'add' || action.type === 'upd') {
+        this.state.toggles[action.payload.featureName] = action.payload.selected
+        this.setState({
+          toggles: this.state.toggles,
+        })
+      }
+      if (action.type === 'del') {
+        delete this.state.toggles[action.payload.featureName]
+        this.setState({
+          toggles: this.state.toggles,
+        })
+      }
+    }
   }
 
   componentDidMount() {
@@ -23,7 +37,7 @@ class FeatureTogglesPage extends React.Component {
 
   render() {
     return (
-      <FeatureTogglesForm toggles={this.state.toggles} />
+      <FeatureTogglesForm toggles={this.state.toggles} handleAction={this.handleAction} />
     )
   }
 }
