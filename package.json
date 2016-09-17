@@ -1,6 +1,6 @@
 {
   "name": "homeless-alarm",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "scripts": {
     "eslint:client": "eslint src/client --global document --ext .js,.jsx",
