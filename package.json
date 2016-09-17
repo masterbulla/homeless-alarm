@@ -33,7 +33,6 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-open-weather-map": "^2.1.0",
-    "serve-favicon": "~2.3.0",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
