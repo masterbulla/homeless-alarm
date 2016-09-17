@@ -21924,8 +21924,7 @@
 	      var _this2 = this;
 
 	      var q = 'London';
-	      var appid = '96743bb1629701cc262e4f37c353f040';
-	      fetch('http://api.openweathermap.org/data/2.5/weather?q=' + q + '&appid=' + appid + '&units=metric').then(function (response) {
+	      fetch('/v1/weather?q=' + q).then(function (response) {
 	        return response.json();
 	      }).then(function (json) {
 	        _this2.setState({ data: json });

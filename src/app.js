@@ -64,12 +64,14 @@ const profile = require('./routes/profile')
 const featureToggles = require('./routes/feature-toggles')
 const login = require('./routes/login')
 const logout = require('./routes/logout')
+const weather = require('./routes/weather')
 
 app.use('/', routes)
 app.use('/profile', profile)
 app.use('/v1/feature-toggles', featureToggles)
 app.use('/login', login)
 app.use('/logout', logout)
+app.use('/v1/weather', weather)
 
 // todo: move into separate files
 app.get('/auth/twitter', passport.authenticate('twitter'))

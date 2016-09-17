@@ -13,8 +13,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const q = 'London'
-    const appid = '96743bb1629701cc262e4f37c353f040'
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${appid}&units=metric`)
+    fetch(`/v1/weather?q=${q}`)
       .then(response => (response.json()))
       .then((json) => {
         this.setState({ data: json })
