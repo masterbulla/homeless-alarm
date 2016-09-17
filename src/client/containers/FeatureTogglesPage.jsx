@@ -1,9 +1,7 @@
 /* global fetch */
 
 import React from 'react'
-import OpenWeatherMap from 'react-open-weather-map'
 import FeatureTogglesForm from '../components/FeatureTogglesForm'
-import sample from '../data/current-weather-data-sample.json'
 
 class FeatureTogglesPage extends React.Component {
   constructor(props, context) {
@@ -28,7 +26,7 @@ class FeatureTogglesPage extends React.Component {
 
   componentDidMount() {
     fetch('/v1/feature-toggles')
-      .then((response) => (response.json()))
+      .then(response => (response.json()))
       .then((json) => {
         this.setState({ toggles: json })
       })
@@ -39,10 +37,7 @@ class FeatureTogglesPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <OpenWeatherMap data={sample} />
-        <FeatureTogglesForm toggles={this.state.toggles} handleAction={this.handleAction} />
-      </div>
+      <FeatureTogglesForm toggles={this.state.toggles} handleAction={this.handleAction} />
     )
   }
 }

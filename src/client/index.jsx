@@ -3,9 +3,9 @@
 import 'whatwg-fetch'
 import React from 'react'
 import { render } from 'react-dom'
-import FeatureTogglesPage from './containers/FeatureTogglesPage'
+import App from './containers/App'
 
 render(
-  <FeatureTogglesPage />,
+  <App />,
   document.getElementById('app')
 )
