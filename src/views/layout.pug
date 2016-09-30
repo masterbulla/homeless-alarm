@@ -14,6 +14,7 @@ html
         div.row.clear.pad-top-5.pad-bottom-5.table-flipping
           div.col-12
             p.text-center (╯°□°）╯︵ ┻━┻
+            #div-socket-to-me.text-center &nbsp;
       div.row.clear.pad-top-5.pad-bottom-5
         div.col-12
           block content
@@ -36,3 +37,5 @@ html
             small= title
       script(src="/feature-toggle/dist/feature-toggle-client.js")
       script(src="/javascripts/feature.js")
+      script(src="/socket.io/socket.io.js")
+      script(src="/javascripts/socket-to-me.js" id="script-socket-to-me" data-host=host)

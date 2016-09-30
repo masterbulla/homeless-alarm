@@ -33,6 +33,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-open-weather-map": "^2.1.0",
+    "socket.io": "^1.4.8",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {

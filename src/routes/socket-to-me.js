@@ -1,11 +1,11 @@
 const express = require('express')
-const makeModel = require('./make-model')
 
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  const model = makeModel(null, req.headers.host)
-  res.send(model.toggles)
+  const message = req.query.message
+  res.io.emit('socket-to-me', message)
+  res.send(message)
 })
 
 module.exports = router

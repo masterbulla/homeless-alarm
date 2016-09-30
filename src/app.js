@@ -35,6 +35,13 @@ passport.serializeUser((user, callback) => (callback(null, user)))
 passport.deserializeUser((obj, callback) => (callback(null, obj)))
 
 const app = express()
+const server = require('http').Server(app)
+const io = require('socket.io')(server)
+
+app.use((req, res, next) => {
+  res.io = io
+  next()
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -64,6 +71,7 @@ const featureToggles = require('./routes/feature-toggles')
 const login = require('./routes/login')
 const logout = require('./routes/logout')
 const weather = require('./routes/weather')
+const socketToMe = require('./routes/socket-to-me')
 
 app.use('/', routes)
 app.use('/profile', profile)
@@ -71,6 +79,7 @@ app.use('/v1/feature-toggles', featureToggles)
 app.use('/login', login)
 app.use('/logout', logout)
 app.use('/v1/weather', weather)
+app.use('/socket-to-me', socketToMe)
 
 // todo: move into separate files
 app.get('/auth/twitter', passport.authenticate('twitter'))
@@ -102,4 +111,4 @@ app.use((err, req, res, next) => {
   })
 })
 
-module.exports = app
+module.exports = { app, server }

@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/',
   ensureLoggedIn,
   (req, res) => {
-    res.render('profile', makeModel(req.user))
+    res.render('profile', makeModel(req.user, req.headers.host))
   })
 
 module.exports = router

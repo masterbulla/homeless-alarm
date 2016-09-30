@@ -6,7 +6,7 @@ const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn()
 const router = express.Router()
 
 function render(req, res) {
-  res.render('index', makeModel(req.user))
+  res.render('index', makeModel(req.user, req.headers.host))
 }
 
 if (featureToggles.isFeatureEnabled('authentication')) {
