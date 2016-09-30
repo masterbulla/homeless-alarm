@@ -7,7 +7,10 @@ const passport = require('passport')
 const Strategy = require('passport-twitter').Strategy
 const mongoose = require('mongoose')
 const debug = require('debug')('homeless-alarm:server')
+const Chance = require('chance')
 require('dotenv').config()
+
+const chance = new Chance()
 
 const uri = process.env.MONGODB_URI
 mongoose.connect(uri)
@@ -42,6 +45,12 @@ app.use((req, res, next) => {
   res.io = io
   next()
 })
+
+const emitHashtag = () => {
+  io.emit('socket-to-me', chance.hashtag())
+}
+
+setInterval(emitHashtag, 30000)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
