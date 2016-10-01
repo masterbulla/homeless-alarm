@@ -1,4 +1,5 @@
 {
   "authentication": true,
-  "table-flipping": true
+  "table-flipping": true,
+  "socket-io": true
 }
