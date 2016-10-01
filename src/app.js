@@ -41,6 +41,10 @@ const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 
+io.on('connection', () => {
+  debug('socket.io connected')
+})
+
 app.use((req, res, next) => {
   res.io = io
   next()
